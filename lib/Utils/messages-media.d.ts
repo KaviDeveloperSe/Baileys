@@ -12,8 +12,8 @@ export declare function getMediaKeys(buffer: Uint8Array | string | null | undefi
 export declare const extractImageThumb: (bufferOrFilePath: Readable | Buffer | string, width?: number) => Promise<{
     buffer: Buffer<ArrayBufferLike>;
     original: {
-        width: number;
-        height: number;
+        width: number | undefined;
+        height: number | undefined;
     };
 }>;
 export declare const encodeBase64EncodedStringForUpload: (b64: string) => string;
